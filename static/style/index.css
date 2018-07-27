@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+
+.contentDiv{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+}
+
+.topBar{
+    height: 5%;
+    width: 100%;
+    background-color: blue;
+}
+
+.dailyPic{
+    height: 85%;
+    width: 100%;
+    margin: auto;
+    top: 5%;
+    bottom: 10%;
+    background-color: url('image/bgp.jpg');
+}
+
+.bottomBar{
+    height: 10%;
+    width: 100%;
+    background-color: green;
+}
+
+
