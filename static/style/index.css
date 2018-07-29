@@ -1,46 +1,43 @@
-*{
+html, body{
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 
 body{
-    height: 100%;
-    background-color: black;
-    display: block;
+    background: url("../image/bgp1.jpg") no-repeat;
+    background-size: cover;
 }
 
 .contentDiv{
-    height: 550px;
-    width: 1200px;
+    height: 90%;
+    width: 90%;
+    background-color: black;
     margin: auto;
     position: absolute;
-    top: 5%;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
-    background-color: red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: block;
 }
 
 .topBar{
-    height: 10%;
+    height: 8%;
     width: 100%;
-    background-color: blue;
-    display: block;
+    background-color: blueviolet;
 }
 
 .dailyPic{
-    height: 75%;
+    height: 79%;
     width: 100%;
-    background-image: url('../image/bgp.jpg');
-    display: block;
+    background: url("../image/bgp1.jpg") no-repeat;
+    background-size: cover;
 }
 
 .bottomBar{
-    height: 15%;
+    height: 13%;
     width: 100%;
-    background-color: green;
-    display: block;
+    background-color: cadetblue;
 }
 
 
