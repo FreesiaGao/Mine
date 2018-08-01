@@ -40,10 +40,10 @@
 <body>
 	<div class="header-outs">
 		<div class="header-w3layouts">
-			<!-- Navigation -->
-
+			<!-- 导航栏 -->
 			<div class="header-bar">
 				<nav class="navbar navbar-default">
+                    <!-- 小屏导航栏 -->
 					<div class="navbar-header navbar-left">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -51,9 +51,10 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-						<h1><a class="navbar-brand" href="index.html">L<span class="fa fa-paw" aria-hidden="true"></span>vely-Pets</a></h1>
+                        <!-- 日推音乐 -->
+                        <h1><a class="navbar-brand" href="index.html"><audio src='{% static "music/阿肆 - 喜欢.mp3" %}' controls></audio></a></h1>
 					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
+					<!-- 大屏导航栏 -->
 					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
@@ -61,7 +62,7 @@
 								<li><a href="#about" class="scroll">呓语</a></li>
 								<li><a href="#services" class="scroll">烦人弹唱会</a></li>
 								<li><a href="#gallery" class="scroll">亲爱的树洞</a></li>
-								<li><a href="#price" class="scroll">Price</a></li>
+								<li><a href="#price" class="scroll">手绘</a></li>
 								<li><a href="#testimonials" class="scroll">Clients</a></li>
 								<li><a href="#contact" class="scroll">Contact</a></li>
 							</ul>
@@ -74,7 +75,7 @@
 
 		</div>
 
-		<!-- Slideshow 4 -->
+		<!-- 日推句子 -->
 		<div class="slider">
 			<div class="callbacks_container">
 				<ul class="rslides" id="slider4">
@@ -82,28 +83,8 @@
 						<div class="slider-img">
 							<div class="container">
 								<div class="slider-info">
-									<h4> <span class="home-banner">O</span>ur <span class="home-banner">A</span>wesome <span class="home-banner">P</span>ets
-										<span
-										    class="fa fa-paw paw-banner" aria-hidden="true"></span><span class="fa fa-paw paw-banner" aria-hidden="true"></span></h4>
-									<p>Quis autem vel eum iure reprehderit.</p>
-									<div class="outs_more-buttn">
-										<a href="#" data-toggle="modal" data-target="#myModal">Buy Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="slider-img ">
-							<div class="container">
-								<div class="slider-info">
-									<h4><span class="home-banner">L</span>ovely And <span class="home-banner">C</span>ute <span class="home-banner">P</span>ets
-										<span
-										    class="fa fa-paw paw-banner" aria-hidden="true"></span><span class="fa fa-paw paw-banner" aria-hidden="true"></span> </h4>
-									<p>Quis autem vel eum iure reprehderit.</p>
-									<div class="outs_more-buttn">
-										<a href="#" data-toggle="modal" data-target="#myModal">Buy Now</a>
-									</div>
+									<h4> <span class="home-banner">永恒</span>是什么颜色的 如果<span class="home-banner">呼吸</span>是短暂的</h4>
+									<p>世间情动 不过盛夏白瓷梅子汤 碎冰碰壁当啷想</p>
 								</div>
 							</div>
 						</div>
@@ -237,12 +218,12 @@
 		</div>
 	</div>
 	<!-- //modal -->
-	<!--About-->
+	<!--烦人弹唱会-->
 	<div class="about" id="about">
 		<div class="container">
 			<div class="about-top-grids">
 				<div class="col-md-7 about-top-grid">
-					<h2>About Us </h2>
+					<h2>烦人弹唱会 </h2>
 					<div class="arrow">
 						<ul>
 							<li><span class="fa fa-paw dog-arrow" aria-hidden="true"></span>
@@ -266,16 +247,15 @@
 					</div>
 				</div>
 				<div class="col-md-5 pope banner-agileits-btm" id="video">
-					<div class="button">
-
-						<a href="#small-dialog1" class="play-icon popup-with-zoom-anim"><span class="fa fa-play-circle" aria-hidden="true"></span></a>
-					</div>
-					<div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">
-						<div class="agileits_modal_body">
-							<iframe src="https://player.vimeo.com/video/72859932?"></iframe>
-
-						</div>
-					</div>
+                    <video src='{% static "vedio/woyaoni_180728.mp4" %}'  width="320" height="240" controls="controls">Your browser does not support the video tag.</video>
+{#					<div class="button">#}
+{#						<a href="#small-dialog1" class="play-icon popup-with-zoom-anim"><span class="fa fa-play-circle" aria-hidden="true"></span></a>#}
+{#					</div>#}
+{#					<div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">#}
+{#						<div class="agileits_modal_body">#}
+{#							<iframe src="https://player.vimeo.com/video/72859932?"></iframe>#}
+{#						</div>#}
+{#					</div>#}
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -374,50 +354,50 @@
 					<div class="tab-1 resp-tab-content">
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g1.jpg' data-big-src='images/g1.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g1.jpg" %}' data-big-src='{% static "images/g1.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g2.jpg' data-big-src='images/g2.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g2.jpg" %}' data-big-src='{% static "images/g2.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g10.jpg' data-big-src='images/g10.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g10.jpg" %}' data-big-src='{% static "images/g10.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g4.jpg' data-big-src='images/g4.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g4.jpg" %}' data-big-src='{% static "images/g4.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6  portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g5.jpg' data-big-src='images/g5.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g5.jpg" %}' data-big-src='{% static "images/g5.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g6.jpg' data-big-src='images/g6.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g6.jpg" %}' data-big-src='{% static "images/g6.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g8.jpg' data-big-src='images/g8.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g8.jpg" %}' data-big-src='{% static "images/g8.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g11.jpg' data-big-src='images/g11.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g11.jpg" %}' data-big-src='{% static "images/g11.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
@@ -426,25 +406,25 @@
 					<div class="tab-1 resp-tab-content">
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g1.jpg' data-big-src='images/g1.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g1.jpg" %}' data-big-src='{% static "images/g1.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g10.jpg' data-big-src='images/g10.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g10.jpg" %}' data-big-src='{% static "images/g10.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g8.jpg' data-big-src='images/g8.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g8.jpg" %}' data-big-src='{% static "images/g8.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g11.jpg' data-big-src='images/g11.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g11.jpg" %}' data-big-src='{% static "images/g11.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
@@ -454,26 +434,26 @@
 					<div class="tab-1 resp-tab-content">
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g5.jpg' data-big-src='images/g5.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g5.jpg" %}' data-big-src='{% static "images/g5.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g7.jpg' data-big-src='images/g7.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g7.jpg" %}' data-big-src='{% static "images/g7.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g6.jpg' data-big-src='images/g6.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g6.jpg" %}' data-big-src='{% static "images/g6.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g7.jpg' data-big-src='images/g7.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g7.jpg" %}' data-big-src='{% static "images/g7.jpg" %}g' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
@@ -482,25 +462,25 @@
 					<div class="tab-1 resp-tab-content">
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g2.jpg' data-big-src='images/g2.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g2.jpg" %}' data-big-src='{% static "images/g2.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g6.jpg' data-big-src='images/g6.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g6.jpg" %}' data-big-src='{% static "images/g6.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g4.jpg' data-big-src='images/g4.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g4.jpg" %}' data-big-src='{% static "images/g4.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6 portfolio-grids">
 							<div class="gallery-grid">
-								<img src='images/g7.jpg' data-big-src='images/g7.jpg' class="img-responsive" alt=" " />
+								<img src='{% static "images/g7.jpg" %}' data-big-src='{% static "images/g7.jpg" %}' class="img-responsive" alt=" " />
 								<p style='opacity:0;display:none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
